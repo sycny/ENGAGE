@@ -1,0 +1,267 @@
+#this one have the best performance for the baseline, but it does not work well on the guided model.
+Cora:
+  GAT:
+    seed: 1000
+    learning_rate: 0.0001
+    num_hidden: 1024
+    coder_hid_num: 32
+    num_mid_hidden: 1024
+    activation: 'elu'
+    base_model: 'GATConv'
+    num_layers: 1
+    num_epochs: 100
+    weight_decay: 0.00001
+    lambda_edge: -2
+    lambda_node: -1
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 4
+  GCN:
+    seed: 1000
+    learning_rate: 0.00005
+    num_hidden: 1024
+    coder_hid_num: 20
+    num_mid_hidden: 1024
+    activation: 'elu'
+    base_model: 'GCNConv'
+    num_layers: 2
+    num_epochs: 100
+    weight_decay: 0.00001
+    lambda_edge: -2
+    lambda_node: 0
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 4
+CiteSeer:
+  GAT:
+    seed: 1001
+    learning_rate: 0.0005
+    num_hidden: 1024
+    coder_hid_num: 36
+    num_mid_hidden: 1024
+    activation: 'elu'
+    base_model: 'GATConv'
+    num_layers: 1
+    num_epochs: 100
+    weight_decay: 0.00001
+    lambda_edge: -2
+    lambda_node: 1
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 4
+  GCN:       
+    seed: 1001
+    learning_rate: 0.0001
+    num_hidden: 512
+    coder_hid_num: 16
+    num_mid_hidden: 128
+    activation: 'prelu'
+    base_model: 'GCNConv'
+    num_layers: 3 
+    num_epochs: 50
+    weight_decay: 0.00001
+    lambda_edge: -1
+    lambda_node: -1
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 4
+PubMed:
+  GAT:
+    seed: 1002
+    learning_rate: 0.0005
+    num_hidden: 256
+    num_mid_hidden: 256
+    num_proj_hidden: 256
+    activation: 'elu'
+    base_model: 'GATConv'
+    num_layers: 2
+    num_epochs: 50
+    weight_decay: 0.00001
+    lambda_edge: -2
+    lambda_node: 1
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 4
+  GCN:
+    seed: 1002
+    learning_rate: 0.00001
+    num_hidden: 512
+    coder_hid_num: 4
+    num_mid_hidden: 512
+    num_proj_hidden: 512
+    activation: 'prelu'
+    base_model: 'GCNConv'
+    num_layers: 2
+    num_epochs: 50
+    weight_decay: 0.00001
+    lambda_edge: -1
+    lambda_node: -1
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 4
+WikiCS:
+  GAT: 
+    seed: 1004
+    learning_rate: 0.00001
+    num_hidden: 512
+    coder_hid_num: 36
+    num_mid_hidden: 256
+    activation: 'elu'
+    base_model: 'GATConv'
+    num_layers: 2
+    num_epochs: 100
+    weight_decay: 0.00001
+    lambda_edge: 1
+    lambda_node: -2
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 4
+  GCN: 
+    seed: 1004
+    learning_rate: 0.000005
+    num_hidden: 1024
+    coder_hid_num: 2
+    num_mid_hidden: 1024
+    num_proj_hidden: 1024
+    activation: 'relu'
+    base_model: 'GCNConv'
+    num_layers: 2
+    num_epochs: 100
+    weight_decay: 0.00001
+    lambda_edge: 2
+    lambda_node: 3
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 8
+Amazon-Photo:
+  GAT: 
+    seed: 1005
+    learning_rate: 0.000005
+    num_hidden: 512
+    coder_hid_num: 36
+    num_mid_hidden: 256
+    activation: 'elu'
+    base_model: 'GATConv'
+    num_layers: 2
+    num_epochs: 300
+    weight_decay: 0.00001
+    lambda_edge: -2
+    lambda_node: 1
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 4
+  GCN: 
+    seed: 1005
+    learning_rate: 0.000005
+    num_hidden: 1024
+    coder_hid_num: 2
+    num_mid_hidden: 1024
+    activation: 'relu'
+    base_model: 'GCNConv'
+    num_layers: 2
+    num_epochs: 100
+    weight_decay: 0.00001
+    lambda_edge: -2
+    lambda_node: -3
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 8
+Amazon-Computers: 
+  GAT: 
+    seed: 1006
+    learning_rate: 0.00001
+    num_hidden: 256
+    coder_hid_num: 24
+    num_mid_hidden: 256
+    activation: 'elu'
+    base_model: 'GATConv'
+    num_layers: 2
+    num_epochs: 80
+    weight_decay: 0.00001
+    lambda_edge: -1
+    lambda_node: -1
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 4
+  GCN:
+    seed: 1006
+    learning_rate: 0.00001
+    num_hidden: 1024
+    coder_hid_num: 2
+    num_mid_hidden: 1024
+    activation: 'relu'
+    base_model: 'GCNConv'
+    num_layers: 2
+    num_epochs: 120
+    weight_decay: 0.00001
+    lambda_edge: -1
+    lambda_node: 1
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 4
+Coauthor-CS:
+  GAT: 
+    seed: 1007
+    learning_rate: 0.0001
+    num_hidden: 512
+    coder_hid_num: 48
+    num_mid_hidden: 512
+    activation: 'elu'
+    base_model: 'GATConv'
+    num_layers: 2
+    num_epochs: 300
+    weight_decay: 0.00001
+    lambda_edge: -1
+    lambda_node: -1
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 4
+  GCN: 
+    seed: 1007
+    learning_rate: 0.00001
+    num_hidden: 1024
+    coder_hid_num: 2
+    num_mid_hidden: 1024
+    activation: 'relu'
+    base_model: 'GCNConv'
+    num_layers: 2
+    num_epochs: 120
+    weight_decay: 0.00001
+    lambda_edge: -1
+    lambda_node: -1
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 4
+Coauthor-Phy:
+  GAT: 
+    seed: 1008
+    learning_rate: 0.00001
+    num_hidden: 256
+    coder_hid_num: 36
+    num_mid_hidden: 256
+    activation: 'elu'
+    base_model: 'GATConv'
+    num_layers: 2
+    num_epochs: 200
+    weight_decay: 0.00001
+    lambda_edge: -1
+    lambda_node: -1
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 4
+  GCN: 
+    seed: 1008
+    learning_rate: 0.00001
+    num_hidden: 1024
+    coder_hid_num: 2
+    num_mid_hidden: 512
+    activation: 'relu'
+    base_model: 'GCNConv'
+    num_layers: 2
+    num_epochs: 200
+    weight_decay: 0.00001
+    lambda_edge: -1
+    lambda_node: -1
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 4

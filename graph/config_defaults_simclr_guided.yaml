@@ -1,0 +1,144 @@
+PROTEINS:
+  GIN:
+    seed: 1001
+    learning_rate: 0.001
+    num_hidden: 128
+    num_mid_hidden: 64
+    tau: 0.7
+    num_epochs: 100
+    weight_decay: 0.00001
+    num_layers: 2
+    lambda_edge: 2
+    lambda_node: 3
+    batch_size: 1113
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 5
+DD:
+  GIN:
+    seed: 1002
+    learning_rate: 0.0005
+    num_hidden: 256
+    num_mid_hidden: 256
+    tau: 0.7
+    num_epochs: 300
+    weight_decay: 0.00001
+    num_layers: 5
+    lambda_edge: -1
+    lambda_node: 3
+    batch_size: 1178
+    edge_p: 0.2
+    node_p: 0.2
+    k_near: 5
+NCI1:
+  GIN:
+    seed: 1003
+    learning_rate: 0.0001
+    num_hidden: 512
+    num_mid_hidden: 256
+    tau: 0.7
+    num_epochs: 100
+    weight_decay: 0.00001
+    num_layers: 6
+    lambda_edge: -2
+    lambda_node: -2
+    batch_size: 4110
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 5
+COLLAB:
+  GIN:
+    seed: 1004
+    learning_rate: 0.001
+    num_hidden: 64
+    num_mid_hidden: 64
+    tau: 0.7
+    num_epochs: 100
+    weight_decay: 0.00001
+    num_layers: 5
+    lambda_edge: -1
+    lambda_node: -1
+    batch_size: 5000
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 5
+REDDIT-BINARY:
+  GIN:
+    seed: 1005
+    learning_rate: 0.0005
+    num_hidden: 96
+    num_mid_hidden: 96
+    tau: 0.7
+    num_epochs: 200
+    weight_decay: 0.00001
+    num_layers: 5
+    lambda_edge: -1
+    lambda_node: -2
+    batch_size: 2000
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 5
+REDDIT-MULTI-5K:
+  GIN:
+    seed: 1006
+    learning_rate: 0.0001
+    num_hidden: 64
+    num_mid_hidden: 64
+    tau: 0.7
+    num_epochs: 40
+    weight_decay: 0.00001
+    num_layers: 2
+    lambda_edge: 3
+    lambda_node: -3
+    batch_size: 4999
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 5
+IMDB-BINARY:
+  GIN:
+    seed: 1007
+    learning_rate: 0.001
+    num_hidden: 64
+    num_mid_hidden: 64
+    tau: 0.7
+    num_epochs: 200
+    weight_decay: 0.00001
+    num_layers: 5
+    lambda_edge: -1
+    lambda_node: 0
+    batch_size: 1000
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 5
+IMDB-MULTI:
+  GIN:
+    seed: 1008
+    learning_rate: 0.00001
+    num_hidden: 512
+    num_mid_hidden: 64
+    tau: 0.7
+    num_epochs: 200
+    weight_decay: 0.00001
+    num_layers: 6
+    lambda_edge: 1
+    lambda_node: -1
+    batch_size: 1500
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 5
+PTC_MR:
+  GIN:
+    seed: 1009
+    learning_rate: 0.000001
+    num_hidden: 512
+    num_mid_hidden: 256
+    tau: 0.7
+    num_epochs: 50
+    weight_decay: 0.00001
+    num_layers: 6
+    lambda_edge: 2
+    lambda_node: 3
+    batch_size: 344
+    edge_p: 0.4
+    node_p: 0.4
+    k_near: 5
