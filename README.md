@@ -1,5 +1,5 @@
 # ENGAGE
-PyTorch implementation for 'ENGAGE: Explanation Guided Data Augmentation for Graph Representation Learning'
+This repository hosts the code for our ECML'23 paper 'ENGAGE: Explanation Guided Data Augmentation for Graph Representation Learning' by Yucheng Shi, Kaixiong Zhou, Ninghao Liu.
 
 ## Dependencies
 * torch 1.10.1+cu113 
