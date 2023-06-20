@@ -1,6 +1,11 @@
 # ENGAGE
 This repository hosts the code for our ECML'23 paper 'ENGAGE: Explanation Guided Data Augmentation for Graph Representation Learning' by Yucheng Shi, Kaixiong Zhou, Ninghao Liu.
 
+## Appendix
+
+[Appendix pdf](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html).
+
+
 ## Dependencies
 * torch 1.10.1+cu113 
 * torch-cluster 1.5.9 
