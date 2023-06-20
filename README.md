@@ -3,8 +3,7 @@ This repository hosts the code for our ECML'23 paper 'ENGAGE: Explanation Guided
 
 ## Appendix
 
-[Appendix pdf](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html).
-
+[ENGAGE_Appendix](https://github.com/sycny/ENGAGE/blob/main/ENGAGE_Appendix.pdf).
 
 ## Dependencies
 * torch 1.10.1+cu113 
