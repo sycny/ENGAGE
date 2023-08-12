@@ -1,5 +1,5 @@
 # ENGAGE
-This repository hosts the code for our ECML'23 paper 'ENGAGE: Explanation Guided Data Augmentation for Graph Representation Learning' by Yucheng Shi, Kaixiong Zhou, Ninghao Liu.
+This repository hosts the code for our ECML'23 paper ['ENGAGE: Explanation Guided Data Augmentation for Graph Representation Learning'](https://arxiv.org/abs/2307.01053), by Yucheng Shi, Kaixiong Zhou, Ninghao Liu.
 
 ## Appendix
 
